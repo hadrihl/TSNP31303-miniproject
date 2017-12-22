@@ -1,0 +1,12 @@
+{
+  "name": "server-edison",
+  "version": "0.0.3",
+  "description": "NodeJS server engine for Intel Edison.",
+  "main": "serv-random.js",
+  "author": "hadrihilmi@gmail.com",
+  "license": "ISC",
+	"dependencies": {
+		"express": "4.16.2",
+		"socket.io": "2.0.4"
+	}
+}

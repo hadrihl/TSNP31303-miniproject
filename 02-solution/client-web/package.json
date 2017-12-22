@@ -1,0 +1,13 @@
+{
+  "name": "client-web",
+  "version": "0.0.2",
+  "description": "Let NodeJS client handles computational and visualization.",
+  "main": "client-web.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pubnub": "^4.19.0",
+    "socket.io-client": "^2.0.4"
+  },
+  "author": "hadrihilmi@gmail.com",
+  "license": "ISC"
+}

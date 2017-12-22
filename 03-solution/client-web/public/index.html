@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://getbootstrap.com/docs/4.0/examples/album/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Mini-Project | TSNP313/03 Wireless Networks 2017/SEPT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./index_files/album.css" rel="stylesheet">
+
+    <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>-->
+    <script type="text/javascript" src="./index_files/loader.js"></script>
+    <script type="text/javascript" src="./index_files/eon.js"></script>
+    <link type="text/css" rel="stylesheet" href="./index_files/eon.css"/>
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">This system provides sensors monitoring from Edison SN (Sensor Node) from outdoor environment. Sensor data such as Ultra-voilet light sensor, humidity sensor, and temperature sensor are gathered together and store into ultra-lightweight Redis server and MySQL server on the web. A simple analyics is performed by the web providing realistic analysis of sensors information.</p>
+            </div>
+            <div class="col-sm-4 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">hadrihl</a></li>
+                <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">hadrihilmi@gmail.com</a></li>
+                <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">WOU (Wawasan Open University)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+          <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand">WSN Develepment // v0.0.1</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Naive - Sensors Monitoring</h1>
+          <p class="lead text-muted">Simple sensors monitoring from Edison sensor-node (SN). Written with NodeJS, Socket.IO, Express.JS and UPM libraries.</p>
+          <p>
+            <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="btn btn-primary">uv generated stream:</a>
+            <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="btn btn-warning" id="myspan">data</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album text-muted">
+        <div class="container">
+
+          <div class="row">
+            <div class="card">
+              <h3>EON-UV: Gauge</h3>
+              <div id="div1" style="height: 240px; width: 80%; display: block;"></div>
+            </div>
+            <div class="card">
+              <h3>EON-UV: Spline</h3>
+              <div id="div2" style="height: 240px; width: 80%; display: block;"></div>
+            </div>
+            <div class="card">
+              <h3>EON-UV: Bar</h3>
+              <div id="div3" style="height: 240px; width: 80%; display: block;"></div>
+            </div>
+
+            <div class="card">
+              <h3>EON-CELCIUS: Gauge</h3>
+              <div id="div4" style="height: 240px; width: 80%; display: block;"></div>
+            </div>
+
+            <div class="card">
+              <h3>EON-CELCIUS: Spline</h3>
+              <div id="div5" style="height: 240px; width: 80%; display: block;"></div>
+            </div>
+
+            <div class="card">
+             <h3>EON-CELCIUS: Bar</h3>
+              <div id="div6" style="height: 240px; width: 80%; display: block;"></div>
+            </div>
+
+            <div class="card">
+              <h3>EON-HUMID: Gauge</h3>
+              <div id="div7" style="height: 240px; width: 80%; display: block;"></div>
+            </div>
+
+            <div class="card">
+              <h3>EON-HUMID: Spline</h3>
+              <div id="div8" style="height: 240px; width: 80%; display: block;"></div>
+            </div>
+
+            <div class="card">
+              <h3>EON-HUMID: Bar</h3>
+              <div id="div9" style="height: 240px; width: 80%; display: block;"></div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="http://getbootstrap.com/docs/4.0/examples/album/#">Back to top</a>
+        </p>
+        <p>2017 © Hadrihl. Build with love in Penang.</p>
+        <p>Crafted with Bootstrap. <a href="http://getbootstrap.com/docs/4.0/">Visit the homepage</a> or read our <a href="http://getbootstrap.com/docs/4.0/getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./index_files/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./index_files/popper.min.js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./index_files/holder.min.js"></script>
+    <script src="./index_files/socket.io.js"></script>
+    <script src="./index_files/core.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="356" height="280" viewBox="0 0 356 280" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="18" style="font-weight:bold;font-size:18pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
