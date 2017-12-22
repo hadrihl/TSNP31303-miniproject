@@ -2,7 +2,7 @@
 =============
 Here we let NodeJS client program (client-web.js) to handle all computational and visualization (PubNub: Eon Charts). 
 
-![Alt text](./img/02-solution.png?)
+![Alt text](./img/02-solution.png)
 
 Setup Sensor Node (SN)
 ----------------------

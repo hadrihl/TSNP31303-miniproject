@@ -2,7 +2,7 @@
 =============
 Here we let NodeJS client program (client-web.js) to handle all computational and visualization (PubNub: Eon Charts) and store to MongoDB.
 
-![Alt text](./img/03-solution.png?)
+![Alt text](./img/03-solution.png)
 
 Setup MongoDB
 -------------
