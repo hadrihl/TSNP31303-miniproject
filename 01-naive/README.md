@@ -2,7 +2,7 @@
 =============
 Naive javascript (core.js) to handle all computational and visualization (PubNub: Eon Charts). 
 
-![ScreenShot](./screenshot/01-solution.png)
+![ScreenShot](./screenshot/01-naive.png)
 
 Setup Intel Edison as Sensor Node (SN)
 --------------------------------------
